@@ -5,9 +5,11 @@ export const HomePage = () => {
         id="form"
         className="min-w-[18rem] max-w-[30rem] bg-whitesmoke mx-auto rounded-lg mt-6"
       >
-        <div
+        <form
           id="form-container"
           className="p-4 flex flex-col items-center gap-2"
+          method="get"
+          action="/"
         >
           <input
             className="w-full text-center border-solid border-[transparent] p-4 ring-0 outline-none focus:outline-none border-jet focus:border-living-coral border-2 rounded-2xl"
@@ -23,7 +25,7 @@ export const HomePage = () => {
             placeholder="Password"
             required
           />
-        </div>
+        </form>
 
         <button
           type="submit"
